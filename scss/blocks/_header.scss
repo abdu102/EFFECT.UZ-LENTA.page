@@ -1,0 +1,120 @@
+header {
+  height: 70px;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__search{
+        height: 70px;
+    }
+    &__list {
+      width: 25%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      &--item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+
+        /* amber black */
+
+        color: #072d4b;
+      }
+    }
+
+    &__icons{
+        width: 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--icon{
+            font-size: 23px;
+            transition: all 0.3s ease;
+           
+         &:first-child{
+            color: #FFF238;
+            font-size: 25px;
+
+         }   
+        }
+    }
+    &__select{
+        border: none;
+
+        & option{
+            border: none;
+            outline: none;
+        }
+    }
+    &__menu {
+        font-size: 31px;
+    }
+  }
+}
+@media screen and (max-width:992px){
+    
+    header {
+        height: 70px;
+        .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+         
+      
+          &__search{
+              height: 70px;
+          }
+          &__list {
+            
+            width: 25%;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            &--item {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 15px;
+      
+              /* amber black */
+      
+              color: #072d4b;
+            }
+          }
+      
+          &__icons{
+              width: 8%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+      
+              &--icon{
+                  font-size: 23px;
+                  transition: all 0.3s ease;
+                 
+               &:first-child{
+                  color: #FFF238;
+                  font-size: 25px;
+      
+               }   
+              }
+          }
+          &__select{
+              border: none;
+        //   display: none;
+              & option{
+                  border: none;
+                  outline: none;
+              }
+          }
+        }
+      }
+}
